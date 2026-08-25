@@ -1,0 +1,17 @@
+# Mineração de Dados Eleitorais 2026 — dependências
+#
+# Local (VS Code): pip install -r requirements.txt dentro do venv do projeto (.venv)
+# Colab: já vem com quase tudo pronto; rode no topo do notebook:
+#   !pip install -q -r requirements.txt
+# (ou, se o notebook estiver isolado, !pip install -q mlxtend — normalmente é o único que falta)
+
+numpy>=1.26
+pandas>=2.1
+matplotlib>=3.8
+seaborn>=0.13
+scikit-learn>=1.4
+scipy>=1.11
+mlxtend>=0.23
+
+# Só necessário para rodar localmente (Colab já tem um kernel próprio)
+ipykernel>=6.29
