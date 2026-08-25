@@ -56,11 +56,13 @@ O arquivo-fonte do TSE pode ser atualizado por eles a qualquer momento (novas ca
 
 ### Google Colab (recomendado para os alunos)
 
-Basta abrir o notebook direto do GitHub — sem instalar nada:
+Cada notebook tem um badge **Open in Colab** na primeira célula — é só clicar. Ou use os links diretos:
 
-```
-https://colab.research.google.com/github/<seu-usuario>/mineracao-dados-eleitorais-2026/blob/main/00_preparacao_dados.ipynb
-```
+- [`00_preparacao_dados.ipynb`](https://colab.research.google.com/github/rglopesdf/mineracao-dados-eleitorais-2026/blob/main/00_preparacao_dados.ipynb)
+- [`01_analise_descritiva.ipynb`](https://colab.research.google.com/github/rglopesdf/mineracao-dados-eleitorais-2026/blob/main/01_analise_descritiva.ipynb)
+- [`02_clusterizacao.ipynb`](https://colab.research.google.com/github/rglopesdf/mineracao-dados-eleitorais-2026/blob/main/02_clusterizacao.ipynb)
+
+> Enquanto o repositório estiver **privado**, esses links pedem login com uma conta GitHub que tenha acesso ao repo. Assim que ele virar público, funcionam pra qualquer aluno sem autenticação nenhuma.
 
 O Colab já vem com quase todas as bibliotecas prontas; se algo faltar (normalmente só `mlxtend`, usado na Fase 3), rode no topo do notebook:
 
