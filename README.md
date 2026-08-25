@@ -31,15 +31,18 @@ UF = None                # None = Brasil inteiro; ou a sigla da UF, ex.: "SP", "
 ANO_ELEICAO = 2026
 ```
 
-## Baixando os dados do TSE (é manual, de propósito)
+## Dados do TSE
 
-O download automático pelo CDN do TSE é bloqueado por um firewall (Akamai) que rejeita requisições que não vêm de um navegador de verdade — acontece tanto no Colab quanto localmente, em qualquer rede, e não é intermitente (tentar de novo não resolve). Por isso o fluxo é manual:
+O download automático pelo CDN do TSE é bloqueado por um firewall (Akamai) que rejeita requisições que não vêm de um navegador de verdade — acontece tanto no Colab quanto localmente, em qualquer rede, e não é intermitente (tentar de novo não resolve).
 
+Por isso os dois zips oficiais (`consulta_cand_2026.zip` e `bem_candidato_2026.zip`) ficam **versionados dentro de `dados/`** — quem clonar o repositório já recebe tudo, sem precisar baixar nada manualmente. A Fase 0 só confere se os arquivos estão no lugar certo antes de descompactar.
+
+Se precisar atualizar para uma versão mais recente publicada pelo TSE:
 1. Baixe pelo navegador:
    - `https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip`
    - `https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip`
-2. Salve os dois dentro de `dados/`, com os nomes `consulta_cand_2026.zip` e `bem_candidato_2026.zip`.
-3. Rode a Fase 0 normalmente — ela confere se os arquivos estão no lugar certo antes de descompactar.
+2. Substitua os arquivos em `dados/` (mesmos nomes) e rode a Fase 0 de novo.
+3. Confira o `DT_GERACAO`/`HH_GERACAO` que a Fase 0 imprime, e faça o commit do novo zip + do novo `dados/*.csv` juntos — assim quem der `git pull` sabe exatamente qual snapshot está usando.
 
 ## Sobre "congelar" a versão dos dados
 

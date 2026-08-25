@@ -1,5 +1,9 @@
-# Dados brutos baixados do TSE (grandes; cada pessoa baixa a própria cópia via Fase 0)
+# Dados brutos baixados do TSE: os dois zips oficiais em dados/ ficam versionados de propósito
+# (o download automático é bloqueado pelo firewall do TSE — ver README — então é mais prático
+# distribuir os zips pelo próprio repositório do que pedir pra cada pessoa baixar manualmente).
+# Qualquer OUTRO .zip (ex: extraído por engano fora de dados/) continua ignorado.
 *.zip
+!dados/*.zip
 files_cand/
 files_bem/
 
