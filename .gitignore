@@ -20,10 +20,6 @@ files_bem/
 .ipynb_checkpoints/
 __pycache__/
 
-# HTMLs interativos gerados pelo pyvis (grafo de regras de associação, Fase 3) — reproduzíveis a
-# qualquer momento rodando o notebook de novo, não precisam ficar versionados
-*.html
-
 # Sistema
 .DS_Store
 
